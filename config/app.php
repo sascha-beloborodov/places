@@ -144,6 +144,15 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Illuminate\Html\HtmlServiceProvider::class,
+
+        /**
+         * Third-party
+         */
+//        Laravel\Socialite\SocialiteServiceProvider::class,
+//        SocialiteProviders\Manager\SocialiteWasCalled::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -192,7 +201,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        'Debugbar'  => Barryvdh\Debugbar\Facade::class,
+        'Form'=> Illuminate\Html\FormFacade::class,
+        'HTML'=> Illuminate\Html\HtmlFacade::class
     ],
 
 ];

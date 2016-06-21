@@ -20,8 +20,8 @@ class DatabaseSeeder extends Seeder
                 'name' => $faker->text(mt_rand(5, 80)),
                 'description' => $faker->text(mt_rand(50, 300)),
                 'address' => $faker->text(mt_rand(20, 150)),
-                'longitude' => $faker->randomFloat(6, 0, 180),
-                'latitude' => $faker->randomFloat(6, 0, 90)
+                'longitude' => $faker->randomFloat(6, -180, 180),
+                'latitude' => $faker->randomFloat(6, -90, 90)
             ]);
         }
         

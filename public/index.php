@@ -6,7 +6,6 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
-
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -46,6 +45,10 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
+
+//defines
+define('REQUEST_ERROR', 1);
+define('REQUEST_SUCCESS', 0);
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 

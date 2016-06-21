@@ -29,5 +29,7 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'map_options' => \App\Http\Middleware\WrongMapSize::class,
+        'coords' => \App\Http\Middleware\WrongCoords::class,
     ];
 }
